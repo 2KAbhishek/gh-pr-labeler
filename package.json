@@ -1,0 +1,26 @@
+{
+  "name": "gh-pr-labeler",
+  "version": "1.0.0",
+  "description": "GitHub PR Labeler",
+  "main": "action.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2kabhishek/gh-pr-labeler.git"
+  },
+  "keywords": [
+    "maintainer",
+    "github",
+    "pull-request",
+    "labeler",
+    "dev"
+  ],
+  "author": "2KAbhishek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2kabhishek/gh-pr-labeler/issues"
+  },
+  "homepage": "https://github.com/2kabhishek/gh-pr-labeler#readme"
+}
