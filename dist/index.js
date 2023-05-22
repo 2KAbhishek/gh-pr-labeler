@@ -10676,7 +10676,7 @@ async function createLabel(octokit, inputs) {
 }
 
 async function getReviews(token, pullNumber) {
-    const client = new github.GitHub(token);
+    const client = new github.getOctokit(token);
     return await client.pulls.listReviews({
         owner: github.context.repo.owner,
         repo: github.context.repo.repo,
