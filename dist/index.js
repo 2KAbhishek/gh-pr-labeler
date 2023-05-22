@@ -10635,7 +10635,7 @@ const github = __nccwpck_require__(5438);
 async function addLabels(client, prNumber, labels) {
     console.log('Adding labels:', labels);
 
-    await client.issues.addLabels({
+    await client.rest.issues.addLabels({
         owner: github.context.repo.owner,
         repo: github.context.repo.repo,
         issue_number: prNumber,
@@ -10646,7 +10646,7 @@ async function addLabels(client, prNumber, labels) {
 async function removeLabel(client, prNumber, label) {
     console.log('Removing label:', label);
 
-    await client.issues.removeLabel({
+    await client.rest.issues.removeLabel({
         owner: github.context.repo.owner,
         repo: github.context.repo.repo,
         issue_number: prNumber,
