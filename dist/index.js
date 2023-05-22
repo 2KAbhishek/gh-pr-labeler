@@ -10635,23 +10635,31 @@ const github = __nccwpck_require__(5438);
 async function addLabels(client, prNumber, labels) {
     console.log('Adding labels:', labels);
 
-    await client.rest.issues.addLabels({
-        owner: github.context.repo.owner,
-        repo: github.context.repo.repo,
-        issue_number: prNumber,
-        labels: labels
-    });
+    try {
+        await client.rest.issues.addLabels({
+            owner: github.context.repo.owner,
+            repo: github.context.repo.repo,
+            issue_number: prNumber,
+            labels: labels
+        });
+    } catch (err) {
+        console.log(err);
+    }
 }
 
 async function removeLabel(client, prNumber, label) {
     console.log('Removing label:', label);
 
-    await client.rest.issues.removeLabel({
-        owner: github.context.repo.owner,
-        repo: github.context.repo.repo,
-        issue_number: prNumber,
-        name: label
-    });
+    try {
+        await client.rest.issues.removeLabel({
+            owner: github.context.repo.owner,
+            repo: github.context.repo.repo,
+            issue_number: prNumber,
+            name: label
+        });
+    } catch (err) {
+        console.log(err);
+    }
 }
 
 async function createLabel(octokit, inputs) {
@@ -10679,21 +10687,24 @@ async function getReviews(client, pullNumber) {
     return await client.rest.pulls.listReviews({
         owner: github.context.repo.owner,
         repo: github.context.repo.repo,
-        pull_number: pullNumber,
+        pull_number: pullNumber
     });
 }
 
 function parseReviews(reviews = []) {
-    const parsed = reviews.map(r => ({
+    const parsed = reviews.map((r) => ({
         state: r.state,
         user: r.user.id,
-        submitted: new Date(r.submitted_at),
+        submitted: new Date(r.submitted_at)
     }));
 
     const data = {};
 
     parsed.forEach((p) => {
-        if (p.state.toLowerCase() !== 'approved' && p.state.toLowerCase() !== 'changes_requested') {
+        if (
+            p.state.toLowerCase() !== 'approved' &&
+            p.state.toLowerCase() !== 'changes_requested'
+        ) {
             return;
         }
 
@@ -10705,10 +10716,8 @@ function parseReviews(reviews = []) {
         }
     });
 
-    return Object.keys(data).map(k => data[k]);
+    return Object.keys(data).map((k) => data[k]);
 }
-
-
 
 module.exports = {
     addLabels,
