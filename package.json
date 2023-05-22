@@ -4,7 +4,7 @@
   "description": "GitHub PR Labeler",
   "main": "dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/ncc build src/labeler.js -m -o dist"
+    "build": "./node_modules/.bin/ncc build src/labeler.js -o dist"
   },
   "repository": {
     "type": "git",
