@@ -67,8 +67,7 @@ const getCommitsForPR = async (url, octokit) => {
         console.log('PR commits: ', formattedCommits, '\n');
         return prCommitsResponse.data;
     } catch (error) {
-        console.error('PR commit request failed: ', error.status);
-        process.exit(1);
+        console.log('PR commit request failed: ', error);
     }
 };
 
@@ -86,8 +85,7 @@ const getBranchCommits = async (url, targetBranch, octokit) => {
         console.log(`${targetBranch} commits: `, formattedCommits, '\n');
         return branchCommitsResponse.data;
     } catch (error) {
-        console.error('Branch commit request failed: ', error.status);
-        process.exit(1);
+        console.log('Branch commit request failed: ', error);
     }
 };
 
