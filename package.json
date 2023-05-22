@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/2kabhishek/gh-pr-labeler/issues"
   },
-  "homepage": "https://github.com/2kabhishek/gh-pr-labeler#readme"
+  "homepage": "https://github.com/2kabhishek/gh-pr-labeler#readme",
+  "devDependencies": {
+    "eslint": "^8.41.0"
+  }
 }
