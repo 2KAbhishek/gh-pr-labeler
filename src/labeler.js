@@ -152,7 +152,7 @@ async function main() {
     console.log('PR number is', pullNumber);
     console.log('Inputs', inputs);
 
-    const client = new github.GitHub(inputs.token);
+    const client = new github.getOctokit(inputs.token);
 
     await handleReviewCountLabel(inputs, client, pullNumber);
 
