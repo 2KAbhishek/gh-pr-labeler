@@ -1,36 +1,30 @@
 <div align = "center">
 
-<h1><a href="https://github.com/2kabhishek/BareMinimum">BareMinimum</a></h1>
+<h1><a href="https://github.com/2kabhishek/gh-pr-labeler">gh-pr-labeler</a></h1>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/blob/main/LICENSE">
-<img alt="License" src="https://img.shields.io/github/license/2kabhishek/BareMinimum?style=flat&color=eee&label="> </a>
+<a href="https://github.com/2KAbhishek/gh-pr-labeler/blob/main/LICENSE">
+<img alt="License" src="https://img.shields.io/github/license/2kabhishek/gh-pr-labeler?style=flat&color=eee&label="> </a>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/graphs/contributors">
-<img alt="People" src="https://img.shields.io/github/contributors/2kabhishek/BareMinimum?style=flat&color=ffaaf2&label=People"> </a>
+<a href="https://github.com/2KAbhishek/gh-pr-labeler/graphs/contributors">
+<img alt="People" src="https://img.shields.io/github/contributors/2kabhishek/gh-pr-labeler?style=flat&color=ffaaf2&label=People"> </a>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/stargazers">
-<img alt="Stars" src="https://img.shields.io/github/stars/2kabhishek/BareMinimum?style=flat&color=98c379&label=Stars"></a>
+<a href="https://github.com/2KAbhishek/gh-pr-labeler/stargazers">
+<img alt="Stars" src="https://img.shields.io/github/stars/2kabhishek/gh-pr-labeler?style=flat&color=98c379&label=Stars"></a>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/network/members">
-<img alt="Forks" src="https://img.shields.io/github/forks/2kabhishek/BareMinimum?style=flat&color=66a8e0&label=Forks"> </a>
+<a href="https://github.com/2KAbhishek/gh-pr-labeler/network/members">
+<img alt="Forks" src="https://img.shields.io/github/forks/2kabhishek/gh-pr-labeler?style=flat&color=66a8e0&label=Forks"> </a>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/watchers">
-<img alt="Watches" src="https://img.shields.io/github/watchers/2kabhishek/BareMinimum?style=flat&color=f5d08b&label=Watches"> </a>
+<a href="https://github.com/2KAbhishek/gh-pr-labeler/watchers">
+<img alt="Watches" src="https://img.shields.io/github/watchers/2kabhishek/gh-pr-labeler?style=flat&color=f5d08b&label=Watches"> </a>
 
-<a href="https://github.com/2KAbhishek/BareMinimum/pulse">
-<img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/BareMinimum?style=flat&color=e06c75&label="> </a>
+<a href="https://github.com/2KAbhishek/gh-pr-labeler/pulse">
+<img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/gh-pr-labeler?style=flat&color=e06c75&label="> </a>
 
-<h3>Short Sweet Headline 🎇🎉</h3>
-
-<figure>
-  <img src="images/screenshot.png" alt="BareMinimum in action">
-  <br/>
-  <figcaption>BareMinimum in action</figcaption>
-</figure>
+<h3>Label Your PRs 🐙😼</h3>
 
 </div>
 
-BareMinimum is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
+gh-pr-labeler is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
 
 ## ✨ Features
 
@@ -48,8 +42,8 @@ BareMinimum is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
 ### 🚀 Installation
 
 ```bash
-git clone https://github.com/2kabhishek/BareMinimum
-cd BareMinimum
+git clone https://github.com/2kabhishek/gh-pr-labeler
+cd gh-pr-labeler
 <install_command>
 ```
 
@@ -57,9 +51,9 @@ cd BareMinimum
 
 ```bash
 USAGE:
-    BareMinimum [FLAGS] [OPTIONS]
+    gh-pr-labeler [FLAGS] [OPTIONS]
 Example:
-    BareMinimum
+    gh-pr-labeler
 ```
 
 ## What's Next
@@ -76,7 +70,7 @@ Planning to add `<feature/module>`.
 
 ### 🌈 Inspiration
 
-BareMinimum was inspired by `<reason/idea>`.
+gh-pr-labeler was inspired by `<reason/idea>`.
 
 ### 💡 Challenges/Learnings
 
@@ -99,7 +93,7 @@ BareMinimum was inspired by `<reason/idea>`.
 
 <strong>⭐ hit the star button if you found this useful ⭐</strong><br>
 
-<a href="https://github.com/2KAbhishek/BareMinimum">Source</a>
+<a href="https://github.com/2KAbhishek/gh-pr-labeler">Source</a>
 | <a href="https://2kabhishek.github.io/blog" target="_blank">Blog </a>
 | <a href="https://twitter.com/2kabhishek" target="_blank">Twitter </a>
 | <a href="https://linkedin.com/in/2kabhishek" target="_blank">LinkedIn </a>
