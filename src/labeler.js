@@ -16,7 +16,7 @@ const handleReviewCountLabel = async (inputs, client, pullNumber) => {
         return;
     }
 
-    const {data} = await getReviews(inputs.token, pullNumber);
+    const {data} = await getReviews(client, pullNumber);
 
     if (inputs.requiredReviews > 0) {
         const activeReviews = parseReviews(data || []);

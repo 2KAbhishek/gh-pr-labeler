@@ -10675,9 +10675,8 @@ async function createLabel(octokit, inputs) {
     }
 }
 
-async function getReviews(token, pullNumber) {
-    const client = new github.getOctokit(token);
-    return await client.pulls.listReviews({
+async function getReviews(client, pullNumber) {
+    return await client.rest.pulls.listReviews({
         owner: github.context.repo.owner,
         repo: github.context.repo.repo,
         pull_number: pullNumber,
@@ -10917,7 +10916,7 @@ const handleReviewCountLabel = async (inputs, client, pullNumber) => {
         return;
     }
 
-    const {data} = await getReviews(inputs.token, pullNumber);
+    const {data} = await getReviews(client, pullNumber);
 
     if (inputs.requiredReviews > 0) {
         const activeReviews = parseReviews(data || []);
