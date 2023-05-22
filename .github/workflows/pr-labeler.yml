@@ -1,5 +1,4 @@
-name: Spring Pull Request Labeler
-
+name: PR Labeler
 on: [pull_request, pull_request_review]
 
 jobs:
@@ -7,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: 2KAbhishek/gh-pr-labeler
+    - uses: 2KAbhishek/gh-pr-labeler@main
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         required: 2
