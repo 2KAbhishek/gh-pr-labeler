@@ -24,58 +24,50 @@
 
 </div>
 
-gh-pr-labeler is a `<utility/tool>` that allows `<target_audience>` to `<action>`.
+A GitHub Action that makes repo maintainer's lives easier.
 
 ## ✨ Features
 
-- Supports foo
-- Can do bar
-- Works with bazz
+- Add labels for current and required number of reviews
+- Add WIP label for draft PRs
+- Track a target branch (e.g. staging) to confirm if all current PR commits exist on target
 
 ## Setup
 
-### ⚡ Requirements
-
-- foo >= bar
-- bazz
-
-### 🚀 Installation
-
-```bash
-git clone https://github.com/2kabhishek/gh-pr-labeler
-cd gh-pr-labeler
-<install_command>
-```
-
 ### 💻 Usage
 
-```bash
-USAGE:
-    gh-pr-labeler [FLAGS] [OPTIONS]
-Example:
-    gh-pr-labeler
+Add the following to your `.github/workflows/pr-labeler.yml` file
+
+```yml
+name: PR Labeler
+on: [pull_request, pull_request_review]
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: 2KAbhishek/gh-pr-labeler@main
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          required: 3
+          wip: true
+          target-branch: main
+          label: Changes in main
+          color: 1688f0
+
 ```
-
-## What's Next
-
-Planning to add `<feature/module>`.
-
-### ✅ To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
 
 ##  Behind The Code
 
 ### 🌈 Inspiration
 
-gh-pr-labeler was inspired by `<reason/idea>`.
+Wanted to build a GitHub action from scratch
 
 ### 💡 Challenges/Learnings
 
-- The main challenges were `<issue/difficulty>`
-- I learned about `<learning/accomplishment>`
+- Slower feedback loop during dev
+- Debugging a GitHub Action is hard
 
 ### 🧰 Tooling
 
@@ -85,7 +77,7 @@ gh-pr-labeler was inspired by `<reason/idea>`.
 
 ### 🔍 More Info
 
-- [similar](https://github.com/2kabhishek/similar) — a related repo
+- [GA-Hello](https://github.com/2kabhishek/GA-Hello) — a GitHub action for beginners
 
 <hr>
 
