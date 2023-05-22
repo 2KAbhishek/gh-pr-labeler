@@ -17,5 +17,4 @@ branding:
   icon: 'git-pull-request'
   color: green
 runs:
-  using: 'node16'
   main: 'index.js'

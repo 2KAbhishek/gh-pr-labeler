@@ -1,0 +1,17 @@
+name: Spring Pull Request Labeler
+
+on: [pull_request, pull_request_review]
+
+jobs:
+  labelPRs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: 2KAbhishek/gh-pr-labeler
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        required: 2
+        wip: true
+        target-branch: staging
+        label: Changes in staging
+        color: 8989FF
