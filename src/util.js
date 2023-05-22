@@ -11,7 +11,7 @@ async function addLabels(client, prNumber, labels) {
             labels: labels
         });
     } catch (err) {
-        console.log(err);
+        console.log(`Error adding labels ${labels}`, err);
     }
 }
 
@@ -26,7 +26,7 @@ async function removeLabel(client, prNumber, label) {
             name: label
         });
     } catch (err) {
-        console.log(err);
+        console.log(`Error removing label ${label}`, err);
     }
 }
 
